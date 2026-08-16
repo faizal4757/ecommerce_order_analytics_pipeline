@@ -1,0 +1,438 @@
+[0m23:12:40.446265 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E71B08C830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E7185E8B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E71D5D7C50>]}
+
+
+============================== 23:12:40.449932 | e01004f3-cdaf-4624-b1c5-de360ae60d02 ==============================
+[0m23:12:40.449932 [info ] [MainThread]: Running with dbt=1.12.0
+[0m23:12:40.450439 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\user\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'D:\\Storage\\Projects\\02_ECommerce_Order_Analytics_Pipeline\\dbt\\logs'}
+[0m23:12:40.472311 [info ] [MainThread]: dbt version: 1.12.0
+[0m23:12:40.472825 [info ] [MainThread]: python version: 3.14.6
+[0m23:12:40.473205 [info ] [MainThread]: python path: D:\Storage\Projects\02_ECommerce_Order_Analytics_Pipeline\.venv\Scripts\python.exe
+[0m23:12:40.473603 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m23:12:41.286244 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m23:12:41.286639 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m23:12:41.286881 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m23:12:41.899989 [info ] [MainThread]: Using profiles dir at C:\Users\user\.dbt
+[0m23:12:41.900625 [info ] [MainThread]: Using profiles.yml file at C:\Users\user\.dbt\profiles.yml
+[0m23:12:41.901088 [info ] [MainThread]: Using dbt_project.yml file at D:\Storage\Projects\02_ECommerce_Order_Analytics_Pipeline\dbt\dbt_project.yml
+[0m23:12:41.901531 [info ] [MainThread]: adapter type: databricks
+[0m23:12:41.901869 [info ] [MainThread]: adapter version: 1.12.4
+[0m23:12:41.987631 [info ] [MainThread]: Configuration:
+[0m23:12:41.988178 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m23:12:41.988658 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m23:12:41.989050 [info ] [MainThread]: Required dependencies:
+[0m23:12:41.989435 [debug] [MainThread]: Executing "git --help"
+[0m23:12:42.282915 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m23:12:42.283356 [debug] [MainThread]: STDERR: "b''"
+[0m23:12:42.283715 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:12:42.284002 [info ] [MainThread]: Connection:
+[0m23:12:42.284386 [info ] [MainThread]:   host: https://dbc-bd8a9261-1cd1.cloud.databricks.com
+[0m23:12:42.284743 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/992cbc778577904e
+[0m23:12:42.285000 [info ] [MainThread]:   catalog: workspace
+[0m23:12:42.285235 [info ] [MainThread]:   schema: ecommerce
+[0m23:12:42.285663 [info ] [MainThread]: Registered adapter: databricks=1.12.4
+[0m23:12:42.539666 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m23:12:42.539980 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m23:12:56.867750 [info ] [MainThread]: Databricks adapter: SPOG discovery probe to 'https://https://dbc-bd8a9261-1cd1.cloud.databricks.com/.well-known/databricks-config' failed after 3 attempts (last error: HTTPSConnectionPool(host='https', port=443): Max retries exceeded with url: //dbc-bd8a9261-1cd1.cloud.databricks.com/.well-known/databricks-config (Caused by NameResolutionError("HTTPSConnection(host='https', port=443): Failed to resolve 'https' ([Errno 11001] getaddrinfo failed)"))). Proceeding as a non-SPOG host. If https://dbc-bd8a9261-1cd1.cloud.databricks.com is a SPOG (unified) workspace, routing errors may follow; verify network reachability to /.well-known/databricks-config.
+[0m23:12:56.903187 [info ] [MainThread]: Databricks adapter:   SPOG host (host_type=None): no
+[0m23:12:56.903676 [info ] [MainThread]: Databricks adapter:   workspace_id (from ?o= in http_path): None
+[0m23:12:56.904082 [info ] [MainThread]: Databricks adapter:   databricks-sql-connector version: 4.4.0 (supported)
+[0m23:12:56.904447 [info ] [MainThread]: Databricks adapter:   databricks-sdk version: 0.117.0 (supported)
+[0m23:12:56.904747 [debug] [MainThread]: Using databricks connection "debug"
+[0m23:12:56.904952 [debug] [MainThread]: On debug: select 1 as id
+[0m23:12:56.905156 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:17:40.213609 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027310090830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002730D5F8B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000273125D7C50>]}
+
+
+============================== 23:17:40.217398 | c5f31fec-d582-4fbb-be5d-73289f438999 ==============================
+[0m23:17:40.217398 [info ] [MainThread]: Running with dbt=1.12.0
+[0m23:17:40.218011 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\user\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'D:\\Storage\\Projects\\02_ECommerce_Order_Analytics_Pipeline\\dbt\\logs'}
+[0m23:17:40.232400 [info ] [MainThread]: dbt version: 1.12.0
+[0m23:17:40.233012 [info ] [MainThread]: python version: 3.14.6
+[0m23:17:40.233497 [info ] [MainThread]: python path: D:\Storage\Projects\02_ECommerce_Order_Analytics_Pipeline\.venv\Scripts\python.exe
+[0m23:17:40.234037 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m23:17:41.149809 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m23:17:41.150296 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m23:17:41.150566 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m23:17:41.816780 [info ] [MainThread]: Using profiles dir at C:\Users\user\.dbt
+[0m23:17:41.817325 [info ] [MainThread]: Using profiles.yml file at C:\Users\user\.dbt\profiles.yml
+[0m23:17:41.817700 [info ] [MainThread]: Using dbt_project.yml file at D:\Storage\Projects\02_ECommerce_Order_Analytics_Pipeline\dbt\dbt_project.yml
+[0m23:17:41.818083 [info ] [MainThread]: adapter type: databricks
+[0m23:17:41.818398 [info ] [MainThread]: adapter version: 1.12.4
+[0m23:17:41.923447 [info ] [MainThread]: Configuration:
+[0m23:17:41.924028 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m23:17:41.924367 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m23:17:41.924844 [info ] [MainThread]: Required dependencies:
+[0m23:17:41.925311 [debug] [MainThread]: Executing "git --help"
+[0m23:17:41.957195 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m23:17:41.957666 [debug] [MainThread]: STDERR: "b''"
+[0m23:17:41.958013 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:17:41.958349 [info ] [MainThread]: Connection:
+[0m23:17:41.958643 [info ] [MainThread]:   host: https://dbc-bd8a9261-1cd1.cloud.databricks.com
+[0m23:17:41.958882 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/992cbc778577904e
+[0m23:17:41.959119 [info ] [MainThread]:   catalog: workspace
+[0m23:17:41.959350 [info ] [MainThread]:   schema: ecommerce
+[0m23:17:41.959751 [info ] [MainThread]: Registered adapter: databricks=1.12.4
+[0m23:17:42.237376 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m23:17:42.237687 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m23:17:52.203199 [info ] [MainThread]: Databricks adapter: SPOG discovery probe to 'https://https://dbc-bd8a9261-1cd1.cloud.databricks.com/.well-known/databricks-config' failed after 3 attempts (last error: HTTPSConnectionPool(host='https', port=443): Max retries exceeded with url: //dbc-bd8a9261-1cd1.cloud.databricks.com/.well-known/databricks-config (Caused by NameResolutionError("HTTPSConnection(host='https', port=443): Failed to resolve 'https' ([Errno 11001] getaddrinfo failed)"))). Proceeding as a non-SPOG host. If https://dbc-bd8a9261-1cd1.cloud.databricks.com is a SPOG (unified) workspace, routing errors may follow; verify network reachability to /.well-known/databricks-config.
+[0m23:17:52.208757 [info ] [MainThread]: Databricks adapter:   SPOG host (host_type=None): no
+[0m23:17:52.209163 [info ] [MainThread]: Databricks adapter:   workspace_id (from ?o= in http_path): None
+[0m23:17:52.209441 [info ] [MainThread]: Databricks adapter:   databricks-sql-connector version: 4.4.0 (supported)
+[0m23:17:52.209703 [info ] [MainThread]: Databricks adapter:   databricks-sdk version: 0.117.0 (supported)
+[0m23:17:52.209963 [debug] [MainThread]: Using databricks connection "debug"
+[0m23:17:52.210144 [debug] [MainThread]: On debug: select 1 as id
+[0m23:17:52.210308 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:18:27.310690 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f19808-5958-1a62-a69c-5050b6873f82) - Created
+[0m23:18:39.953988 [debug] [MainThread]: SQL status: OK in 47.740 seconds
+[0m23:18:39.954859 [debug] [MainThread]: Databricks adapter: Cursor(session-id=01f19808-5958-1a62-a69c-5050b6873f82, command-id=01f19808-5a8d-1337-8b87-0183c601d5c6) - Closing
+[0m23:18:41.081485 [debug] [MainThread]: On debug: Close
+[0m23:18:41.082295 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f19808-5958-1a62-a69c-5050b6873f82) - Closing
+[0m23:18:42.978710 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m23:18:42.979298 [info ] [MainThread]: [32mAll checks passed![0m
+[0m23:18:42.980167 [debug] [MainThread]: Command `dbt debug` succeeded at 23:18:42.980062 after 63.05 seconds
+[0m23:18:42.980474 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027326EFE060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002730D3545F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000273271D47C0>]}
+[0m23:18:42.980787 [debug] [MainThread]: Flushing usage events
+[0m23:18:45.718413 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:21:23.077244 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002538154C830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000253FEAA8B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025383A97C50>]}
+
+
+============================== 23:21:23.080795 | 925f7411-b3e8-4a57-926f-6d2319adc7b8 ==============================
+[0m23:21:23.080795 [info ] [MainThread]: Running with dbt=1.12.0
+[0m23:21:23.081360 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\user\\.dbt', 'invocation_command': 'dbt parse', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'D:\\Storage\\Projects\\02_ECommerce_Order_Analytics_Pipeline\\dbt\\logs'}
+[0m23:21:23.895050 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m23:21:23.895440 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m23:21:23.895686 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m23:21:24.707633 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '925f7411-b3e8-4a57-926f-6d2319adc7b8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025398217BB0>]}
+[0m23:21:24.846332 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '925f7411-b3e8-4a57-926f-6d2319adc7b8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025398349370>]}
+[0m23:21:24.849078 [info ] [MainThread]: Registered adapter: databricks=1.12.4
+[0m23:21:25.301624 [debug] [MainThread]: checksum: 23f98201067e2caac2513101c769d7145d2a2065afb04aba7c2efea708fe351c, vars: {}, profile: ecommerce_dbt, target: dev, version: 1.12.0
+[0m23:21:25.302465 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m23:21:25.302897 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '925f7411-b3e8-4a57-926f-6d2319adc7b8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025398330B50>]}
+[0m23:21:27.985085 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.ecommerce_dbt.staging
+- models.ecommerce_dbt.gold
+- models.ecommerce_dbt.silver
+[0m23:21:27.989454 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '925f7411-b3e8-4a57-926f-6d2319adc7b8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025398AC47D0>]}
+[0m23:21:27.992651 [info ] [MainThread]: Performance info: D:\Storage\Projects\02_ECommerce_Order_Analytics_Pipeline\dbt\target\perf_info.json
+[0m23:21:28.059701 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Storage\Projects\02_ECommerce_Order_Analytics_Pipeline\dbt\target\manifest.json
+[0m23:21:28.074940 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Storage\Projects\02_ECommerce_Order_Analytics_Pipeline\dbt\target\semantic_manifest.json
+[0m23:21:28.095485 [debug] [MainThread]: Wrote artifact OsiDocument to D:\Storage\Projects\02_ECommerce_Order_Analytics_Pipeline\dbt\target\osi_document.json
+[0m23:21:28.096587 [debug] [MainThread]: Command `dbt parse` succeeded at 23:21:28.096425 after 5.28 seconds
+[0m23:21:28.097054 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000253FF914750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002538395F5B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002538391D090>]}
+[0m23:21:28.097363 [debug] [MainThread]: Flushing usage events
+[0m23:21:29.521995 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:21:36.670485 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001297C560830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012979AB8B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001297EAABC50>]}
+
+
+============================== 23:21:36.674006 | b1bf0dcd-34e6-4e48-b08c-a80fb61c8001 ==============================
+[0m23:21:36.674006 [info ] [MainThread]: Running with dbt=1.12.0
+[0m23:21:36.674565 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\user\\.dbt', 'invocation_command': 'dbt ls', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'D:\\Storage\\Projects\\02_ECommerce_Order_Analytics_Pipeline\\dbt\\logs'}
+[0m23:21:37.488572 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m23:21:37.488963 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m23:21:37.489316 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m23:21:38.197586 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b1bf0dcd-34e6-4e48-b08c-a80fb61c8001', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001291332BBB0>]}
+[0m23:21:38.253175 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b1bf0dcd-34e6-4e48-b08c-a80fb61c8001', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001291345D370>]}
+[0m23:21:38.253902 [info ] [MainThread]: Registered adapter: databricks=1.12.4
+[0m23:21:38.521997 [debug] [MainThread]: checksum: 23f98201067e2caac2513101c769d7145d2a2065afb04aba7c2efea708fe351c, vars: {}, profile: ecommerce_dbt, target: dev, version: 1.12.0
+[0m23:21:38.621077 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:21:38.621423 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m23:21:38.621639 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:21:38.622014 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.ecommerce_dbt.gold
+- models.ecommerce_dbt.silver
+- models.ecommerce_dbt.staging
+[0m23:21:38.625927 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b1bf0dcd-34e6-4e48-b08c-a80fb61c8001', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001291343CA50>]}
+[0m23:21:38.701293 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Storage\Projects\02_ECommerce_Order_Analytics_Pipeline\dbt\target\manifest.json
+[0m23:21:38.704189 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Storage\Projects\02_ECommerce_Order_Analytics_Pipeline\dbt\target\semantic_manifest.json
+[0m23:21:38.724954 [debug] [MainThread]: Wrote artifact OsiDocument to D:\Storage\Projects\02_ECommerce_Order_Analytics_Pipeline\dbt\target\osi_document.json
+[0m23:21:38.737206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b1bf0dcd-34e6-4e48-b08c-a80fb61c8001', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001291391EF30>]}
+[0m23:21:38.737658 [info ] [MainThread]: Found 3 sources, 773 macros
+[0m23:21:38.738186 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b1bf0dcd-34e6-4e48-b08c-a80fb61c8001', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012913957070>]}
+[0m23:21:38.739229 [info ] [MainThread]: source:ecommerce_dbt.ecommerce.customers
+[0m23:21:38.739781 [info ] [MainThread]: source:ecommerce_dbt.ecommerce.orders
+[0m23:21:38.740107 [info ] [MainThread]: source:ecommerce_dbt.ecommerce.products
+[0m23:21:38.740947 [debug] [MainThread]: Command `dbt ls` succeeded at 23:21:38.740859 after 2.25 seconds
+[0m23:21:38.741250 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001297E92D090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012913A396D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012913A393D0>]}
+[0m23:21:38.741617 [debug] [MainThread]: Flushing usage events
+[0m23:21:40.224501 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:57:49.289114 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002378C20C830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023789778B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002378E7CF9D0>]}
+
+
+============================== 11:57:49.298199 | f328d2ae-b9b2-4ca7-9597-680c51a6dde9 ==============================
+[0m11:57:49.298199 [info ] [MainThread]: Running with dbt=1.12.0
+[0m11:57:49.299808 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\user\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt compile --select stg_orders', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'D:\\Storage\\Projects\\02_ECommerce_Order_Analytics_Pipeline\\dbt\\logs'}
+[0m11:58:02.116689 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m11:58:02.117506 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m11:58:02.117946 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m11:58:12.072487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f328d2ae-b9b2-4ca7-9597-680c51a6dde9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237A2E6FBB0>]}
+[0m11:58:12.321968 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f328d2ae-b9b2-4ca7-9597-680c51a6dde9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237A303D260>]}
+[0m11:58:12.324437 [info ] [MainThread]: Registered adapter: databricks=1.12.4
+[0m11:58:14.174180 [debug] [MainThread]: checksum: 23f98201067e2caac2513101c769d7145d2a2065afb04aba7c2efea708fe351c, vars: {}, profile: ecommerce_dbt, target: dev, version: 1.12.0
+[0m11:58:20.927826 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m11:58:20.929886 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://models\staging\stg_orders.sql
+[0m11:58:22.155043 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.ecommerce_dbt.silver
+- models.ecommerce_dbt.gold
+[0m11:58:22.173815 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f328d2ae-b9b2-4ca7-9597-680c51a6dde9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237A3020D50>]}
+[0m11:58:22.588300 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Storage\Projects\02_ECommerce_Order_Analytics_Pipeline\dbt\target\manifest.json
+[0m11:58:22.657698 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Storage\Projects\02_ECommerce_Order_Analytics_Pipeline\dbt\target\semantic_manifest.json
+[0m11:58:22.757478 [debug] [MainThread]: Wrote artifact OsiDocument to D:\Storage\Projects\02_ECommerce_Order_Analytics_Pipeline\dbt\target\osi_document.json
+[0m11:58:22.797448 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f328d2ae-b9b2-4ca7-9597-680c51a6dde9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237A39F67B0>]}
+[0m11:58:22.799058 [info ] [MainThread]: Found 1 model, 3 sources, 773 macros
+[0m11:58:22.800559 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f328d2ae-b9b2-4ca7-9597-680c51a6dde9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237A39E65F0>]}
+[0m11:58:22.807936 [info ] [MainThread]: 
+[0m11:58:22.809866 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:58:22.812218 [info ] [MainThread]: 
+[0m11:58:22.814817 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m11:58:22.815713 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m11:58:22.818883 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_workspace_ecommerce) - Creating connection
+[0m11:58:22.819998 [debug] [ThreadPool]: Acquiring new databricks connection 'list_workspace_ecommerce'
+[0m11:58:22.858030 [debug] [ThreadPool]: Using databricks connection "list_workspace_ecommerce"
+[0m11:58:22.859988 [debug] [ThreadPool]: On list_workspace_ecommerce: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.4", "databricks_sql_connector_version": "4.4.0", "profile_name": "ecommerce_dbt", "target_name": "dev", "invocation_id": "f328d2ae-b9b2-4ca7-9597-680c51a6dde9", "connection_name": "list_workspace_ecommerce"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'workspace'
+  AND table_schema = 'ecommerce'
+
+  
+[0m11:58:22.861221 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:58:37.393613 [info ] [ThreadPool]: Databricks adapter: SPOG discovery probe to 'https://https://dbc-bd8a9261-1cd1.cloud.databricks.com/.well-known/databricks-config' failed after 3 attempts (last error: HTTPSConnectionPool(host='https', port=443): Max retries exceeded with url: //dbc-bd8a9261-1cd1.cloud.databricks.com/.well-known/databricks-config (Caused by NameResolutionError("HTTPSConnection(host='https', port=443): Failed to resolve 'https' ([Errno 11001] getaddrinfo failed)"))). Proceeding as a non-SPOG host. If https://dbc-bd8a9261-1cd1.cloud.databricks.com is a SPOG (unified) workspace, routing errors may follow; verify network reachability to /.well-known/databricks-config.
+[0m11:58:44.104955 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1993b-b9fa-1df3-8298-2d9b7742c31f) - Created
+[0m11:58:56.336205 [debug] [ThreadPool]: SQL status: OK in 33.470 seconds
+[0m11:58:56.385574 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1993b-b9fa-1df3-8298-2d9b7742c31f, command-id=01f1993b-badd-1e21-865f-227420ad2b36) - Closing
+[0m11:58:56.733607 [debug] [ThreadPool]: On list_workspace_ecommerce: Close
+[0m11:58:56.734933 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1993b-b9fa-1df3-8298-2d9b7742c31f) - Closing
+[0m11:58:57.072676 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f328d2ae-b9b2-4ca7-9597-680c51a6dde9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237A3A386D0>]}
+[0m11:58:57.089433 [debug] [Thread-2 (]: Began running node model.ecommerce_dbt.stg_orders
+[0m11:58:57.092422 [debug] [Thread-2 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.ecommerce_dbt.stg_orders) - Creating connection
+[0m11:58:57.093850 [debug] [Thread-2 (]: Acquiring new databricks connection 'model.ecommerce_dbt.stg_orders'
+[0m11:58:57.095372 [debug] [Thread-2 (]: Began compiling node model.ecommerce_dbt.stg_orders
+[0m11:58:57.119239 [debug] [Thread-2 (]: Writing injected SQL for node "model.ecommerce_dbt.stg_orders"
+[0m11:58:57.125032 [debug] [Thread-2 (]: Began executing node model.ecommerce_dbt.stg_orders
+[0m11:58:57.129507 [debug] [Thread-2 (]: Finished running node model.ecommerce_dbt.stg_orders
+[0m11:58:57.135727 [debug] [MainThread]: Command end result
+[0m11:58:57.308204 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Storage\Projects\02_ECommerce_Order_Analytics_Pipeline\dbt\target\manifest.json
+[0m11:58:57.320390 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Storage\Projects\02_ECommerce_Order_Analytics_Pipeline\dbt\target\semantic_manifest.json
+[0m11:58:57.331549 [debug] [MainThread]: Wrote artifact OsiDocument to D:\Storage\Projects\02_ECommerce_Order_Analytics_Pipeline\dbt\target\osi_document.json
+[0m11:58:57.362526 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\Storage\Projects\02_ECommerce_Order_Analytics_Pipeline\dbt\target\run_results.json
+[0m11:58:57.364390 [info ] [MainThread]: Compiled node 'stg_orders' is:
+SELECT
+    order_id,
+    customer_id,
+    product_id,
+    quantity,
+    unit_price,
+    CAST(order_timestamp AS TIMESTAMP) AS order_timestamp,
+    shipping_address,
+    payment_method,
+    CAST(processing_date AS DATE) AS processing_date,
+    year,
+    month,
+    day
+FROM `workspace`.`ecommerce`.`orders`
+[0m11:58:57.369448 [debug] [MainThread]: Command `dbt compile` succeeded at 11:58:57.368925 after 68.64 seconds
+[0m11:58:57.370650 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237A3A44DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237A3A8AD00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000237A3A8ABA0>]}
+[0m11:58:57.372289 [debug] [MainThread]: Flushing usage events
+[0m11:58:58.589058 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:06:37.961956 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000299E2ADC830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000299E0048B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000299E509F9D0>]}
+
+
+============================== 12:06:37.968456 | c5d55bfc-7b71-4046-b8f2-e0cbfa483ccb ==============================
+[0m12:06:37.968456 [info ] [MainThread]: Running with dbt=1.12.0
+[0m12:06:37.969525 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\user\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run --select stg_orders', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'D:\\Storage\\Projects\\02_ECommerce_Order_Analytics_Pipeline\\dbt\\logs'}
+[0m12:06:39.361694 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m12:06:39.362488 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m12:06:39.363023 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m12:06:40.667571 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c5d55bfc-7b71-4046-b8f2-e0cbfa483ccb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000299F97FFBB0>]}
+[0m12:06:40.741259 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c5d55bfc-7b71-4046-b8f2-e0cbfa483ccb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000299F99CD260>]}
+[0m12:06:40.742394 [info ] [MainThread]: Registered adapter: databricks=1.12.4
+[0m12:06:41.160500 [debug] [MainThread]: checksum: 23f98201067e2caac2513101c769d7145d2a2065afb04aba7c2efea708fe351c, vars: {}, profile: ecommerce_dbt, target: dev, version: 1.12.0
+[0m12:06:41.362812 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:06:41.363288 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m12:06:41.363584 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:06:41.372579 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.ecommerce_dbt.silver
+- models.ecommerce_dbt.gold
+[0m12:06:41.379872 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c5d55bfc-7b71-4046-b8f2-e0cbfa483ccb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000299FA0D8D50>]}
+[0m12:06:41.543698 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Storage\Projects\02_ECommerce_Order_Analytics_Pipeline\dbt\target\manifest.json
+[0m12:06:41.548556 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Storage\Projects\02_ECommerce_Order_Analytics_Pipeline\dbt\target\semantic_manifest.json
+[0m12:06:41.585489 [debug] [MainThread]: Wrote artifact OsiDocument to D:\Storage\Projects\02_ECommerce_Order_Analytics_Pipeline\dbt\target\osi_document.json
+[0m12:06:41.606584 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c5d55bfc-7b71-4046-b8f2-e0cbfa483ccb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000299F9E37980>]}
+[0m12:06:41.607485 [info ] [MainThread]: Found 1 model, 3 sources, 773 macros
+[0m12:06:41.608131 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c5d55bfc-7b71-4046-b8f2-e0cbfa483ccb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000299F9EC7CB0>]}
+[0m12:06:41.611215 [info ] [MainThread]: 
+[0m12:06:41.611881 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m12:06:41.612318 [info ] [MainThread]: 
+[0m12:06:41.613885 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m12:06:41.614371 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m12:06:41.616452 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_workspace) - Creating connection
+[0m12:06:41.616858 [debug] [ThreadPool]: Acquiring new databricks connection 'list_workspace'
+[0m12:06:41.635880 [debug] [ThreadPool]: Using databricks connection "list_workspace"
+[0m12:06:41.636545 [debug] [ThreadPool]: On list_workspace: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.4", "databricks_sql_connector_version": "4.4.0", "profile_name": "ecommerce_dbt", "target_name": "dev", "invocation_id": "c5d55bfc-7b71-4046-b8f2-e0cbfa483ccb", "connection_name": "list_workspace"} */
+
+    
+
+  SHOW SCHEMAS IN `workspace`
+
+
+  
+[0m12:06:41.636885 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:06:56.111702 [info ] [ThreadPool]: Databricks adapter: SPOG discovery probe to 'https://https://dbc-bd8a9261-1cd1.cloud.databricks.com/.well-known/databricks-config' failed after 3 attempts (last error: HTTPSConnectionPool(host='https', port=443): Max retries exceeded with url: //dbc-bd8a9261-1cd1.cloud.databricks.com/.well-known/databricks-config (Caused by NameResolutionError("HTTPSConnection(host='https', port=443): Failed to resolve 'https' ([Errno 11001] getaddrinfo failed)"))). Proceeding as a non-SPOG host. If https://dbc-bd8a9261-1cd1.cloud.databricks.com is a SPOG (unified) workspace, routing errors may follow; verify network reachability to /.well-known/databricks-config.
+[0m12:07:02.674231 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1993c-e320-143a-8d99-dda43df6b461) - Created
+[0m12:07:03.866624 [debug] [ThreadPool]: SQL status: OK in 22.230 seconds
+[0m12:07:03.888007 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1993c-e320-143a-8d99-dda43df6b461, command-id=01f1993c-e408-1f48-bd32-0cfcae51fa67) - Closing
+[0m12:07:03.889820 [debug] [ThreadPool]: On list_workspace: Close
+[0m12:07:03.890867 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1993c-e320-143a-8d99-dda43df6b461) - Closing
+[0m12:07:04.209009 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_workspace_ecommerce) - Creating connection
+[0m12:07:04.209914 [debug] [ThreadPool]: Acquiring new databricks connection 'list_workspace_ecommerce'
+[0m12:07:04.229738 [debug] [ThreadPool]: Using databricks connection "list_workspace_ecommerce"
+[0m12:07:04.231406 [debug] [ThreadPool]: On list_workspace_ecommerce: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.4", "databricks_sql_connector_version": "4.4.0", "profile_name": "ecommerce_dbt", "target_name": "dev", "invocation_id": "c5d55bfc-7b71-4046-b8f2-e0cbfa483ccb", "connection_name": "list_workspace_ecommerce"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'workspace'
+  AND table_schema = 'ecommerce'
+
+  
+[0m12:07:04.232712 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:07:05.655449 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1993c-e59a-15f8-8e90-464b6e6f073f) - Created
+[0m12:07:06.747544 [debug] [ThreadPool]: SQL status: OK in 2.510 seconds
+[0m12:07:06.754985 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1993c-e59a-15f8-8e90-464b6e6f073f, command-id=01f1993c-e5cf-1346-800d-06c0368c70c6) - Closing
+[0m12:07:06.757443 [debug] [ThreadPool]: On list_workspace_ecommerce: Close
+[0m12:07:06.758968 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1993c-e59a-15f8-8e90-464b6e6f073f) - Closing
+[0m12:07:07.067534 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c5d55bfc-7b71-4046-b8f2-e0cbfa483ccb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000299FA21CFC0>]}
+[0m12:07:07.077751 [debug] [Thread-3 (]: Began running node model.ecommerce_dbt.stg_orders
+[0m12:07:07.079477 [info ] [Thread-3 (]: 1 of 1 START sql view model ecommerce.stg_orders ............................... [RUN]
+[0m12:07:07.081523 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.ecommerce_dbt.stg_orders) - Creating connection
+[0m12:07:07.082310 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.ecommerce_dbt.stg_orders'
+[0m12:07:07.083632 [debug] [Thread-3 (]: Began compiling node model.ecommerce_dbt.stg_orders
+[0m12:07:07.105292 [debug] [Thread-3 (]: Writing injected SQL for node "model.ecommerce_dbt.stg_orders"
+[0m12:07:07.108031 [debug] [Thread-3 (]: Began executing node model.ecommerce_dbt.stg_orders
+[0m12:07:07.146981 [debug] [Thread-3 (]: MATERIALIZING VIEW
+[0m12:07:07.212775 [debug] [Thread-3 (]: Creating view `workspace`.`ecommerce`.`stg_orders`
+[0m12:07:07.255904 [debug] [Thread-3 (]: Writing runtime sql for node "model.ecommerce_dbt.stg_orders"
+[0m12:07:07.260902 [debug] [Thread-3 (]: Using databricks connection "model.ecommerce_dbt.stg_orders"
+[0m12:07:07.263141 [debug] [Thread-3 (]: On model.ecommerce_dbt.stg_orders: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.4", "databricks_sql_connector_version": "4.4.0", "profile_name": "ecommerce_dbt", "target_name": "dev", "invocation_id": "c5d55bfc-7b71-4046-b8f2-e0cbfa483ccb", "node_id": "model.ecommerce_dbt.stg_orders"} */
+
+  
+  
+  
+  create or replace view `workspace`.`ecommerce`.`stg_orders`
+  
+  as (
+    SELECT
+    order_id,
+    customer_id,
+    product_id,
+    quantity,
+    unit_price,
+    CAST(order_timestamp AS TIMESTAMP) AS order_timestamp,
+    shipping_address,
+    payment_method,
+    CAST(processing_date AS DATE) AS processing_date,
+    year,
+    month,
+    day
+FROM `workspace`.`ecommerce`.`orders`
+  )
+
+[0m12:07:07.265049 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m12:07:08.621418 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1993c-e761-15f1-81f5-590f97cfe897) - Created
+[0m12:07:10.325920 [debug] [Thread-3 (]: SQL status: OK in 3.060 seconds
+[0m12:07:10.328788 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1993c-e761-15f1-81f5-590f97cfe897, command-id=01f1993c-e793-1b1e-9fda-bcb31de3eb61) - Closing
+[0m12:07:10.366088 [debug] [Thread-3 (]: Applying tags to relation None
+[0m12:07:10.373800 [debug] [Thread-3 (]: On model.ecommerce_dbt.stg_orders: Close
+[0m12:07:10.374647 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1993c-e761-15f1-81f5-590f97cfe897) - Closing
+[0m12:07:10.738391 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c5d55bfc-7b71-4046-b8f2-e0cbfa483ccb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000299FA574D10>]}
+[0m12:07:10.740091 [info ] [Thread-3 (]: 1 of 1 OK created sql view model ecommerce.stg_orders .......................... [[32mOK[0m in 3.65s]
+[0m12:07:10.742362 [debug] [Thread-3 (]: Finished running node model.ecommerce_dbt.stg_orders
+[0m12:07:10.746280 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m12:07:10.747513 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m12:07:10.749082 [info ] [MainThread]: 
+[0m12:07:10.750724 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 29.14 seconds (29.14s).
+[0m12:07:10.753243 [debug] [MainThread]: Command end result
+[0m12:07:10.918495 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Storage\Projects\02_ECommerce_Order_Analytics_Pipeline\dbt\target\manifest.json
+[0m12:07:10.974422 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Storage\Projects\02_ECommerce_Order_Analytics_Pipeline\dbt\target\semantic_manifest.json
+[0m12:07:10.988039 [debug] [MainThread]: Wrote artifact OsiDocument to D:\Storage\Projects\02_ECommerce_Order_Analytics_Pipeline\dbt\target\osi_document.json
+[0m12:07:11.010967 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\Storage\Projects\02_ECommerce_Order_Analytics_Pipeline\dbt\target\run_results.json
+[0m12:07:11.012473 [info ] [MainThread]: 
+[0m12:07:11.014292 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:07:11.015887 [info ] [MainThread]: 
+[0m12:07:11.018026 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m12:07:11.020932 [debug] [MainThread]: Command `dbt run` succeeded at 12:07:11.020505 after 33.34 seconds
+[0m12:07:11.022091 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000299FA5A4680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000299FA582C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000299FA582DF0>]}
+[0m12:07:11.023222 [debug] [MainThread]: Flushing usage events
+[0m12:07:12.267075 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:21:28.976256 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001332BCB0830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013329218B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001332E1F3C50>]}
+
+
+============================== 12:21:28.981927 | a91e07af-3417-4956-ba69-dd5d7d6cfc2b ==============================
+[0m12:21:28.981927 [info ] [MainThread]: Running with dbt=1.12.0
+[0m12:21:28.982729 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\user\\.dbt', 'invocation_command': 'dbt ls', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'D:\\Storage\\Projects\\02_ECommerce_Order_Analytics_Pipeline\\dbt\\logs'}
+[0m12:21:39.547836 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m12:21:39.548655 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m12:21:39.549034 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m12:21:48.292280 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a91e07af-3417-4956-ba69-dd5d7d6cfc2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013342A3BBB0>]}
+[0m12:21:48.646270 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a91e07af-3417-4956-ba69-dd5d7d6cfc2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013342B65370>]}
+[0m12:21:48.650401 [info ] [MainThread]: Registered adapter: databricks=1.12.4
+[0m12:21:50.535663 [debug] [MainThread]: checksum: 23f98201067e2caac2513101c769d7145d2a2065afb04aba7c2efea708fe351c, vars: {}, profile: ecommerce_dbt, target: dev, version: 1.12.0
+[0m12:21:56.870848 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:21:56.872305 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m12:21:56.873262 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:21:56.901171 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.ecommerce_dbt.gold
+- models.ecommerce_dbt.silver
+[0m12:21:56.918591 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a91e07af-3417-4956-ba69-dd5d7d6cfc2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013343248D50>]}
+[0m12:21:57.487090 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Storage\Projects\02_ECommerce_Order_Analytics_Pipeline\dbt\target\manifest.json
+[0m12:21:57.499899 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Storage\Projects\02_ECommerce_Order_Analytics_Pipeline\dbt\target\semantic_manifest.json
+[0m12:21:57.585107 [debug] [MainThread]: Wrote artifact OsiDocument to D:\Storage\Projects\02_ECommerce_Order_Analytics_Pipeline\dbt\target\osi_document.json
+[0m12:21:57.628395 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a91e07af-3417-4956-ba69-dd5d7d6cfc2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001334301AF30>]}
+[0m12:21:57.630011 [info ] [MainThread]: Found 1 model, 3 sources, 773 macros
+[0m12:21:57.631643 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a91e07af-3417-4956-ba69-dd5d7d6cfc2b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013343067D90>]}
+[0m12:21:57.635529 [info ] [MainThread]: ecommerce_dbt.staging.stg_orders
+[0m12:21:57.638091 [info ] [MainThread]: source:ecommerce_dbt.ecommerce.customers
+[0m12:21:57.639258 [info ] [MainThread]: source:ecommerce_dbt.ecommerce.orders
+[0m12:21:57.640490 [info ] [MainThread]: source:ecommerce_dbt.ecommerce.products
+[0m12:21:57.643564 [debug] [MainThread]: Command `dbt ls` succeeded at 12:21:57.643118 after 29.23 seconds
+[0m12:21:57.644928 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001332E07D090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000133430EE810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000133430EE510>]}
+[0m12:21:57.646265 [debug] [MainThread]: Flushing usage events
+[0m12:21:58.863613 [debug] [MainThread]: An error was encountered while trying to flush usage events
