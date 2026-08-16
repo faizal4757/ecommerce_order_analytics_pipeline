@@ -3,3 +3,6 @@
 /project_content/
 /secrets/
 /logs/
+# dbt generated files
+dbt/target/
+dbt/logs/
